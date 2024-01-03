@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Powerpoint Blur</title>
+  </head>
+
+<main id='main'>
+
+  <h1>Sage Analysis Group - Blurred Powerpoint Tool</h1>
+  <p>This tool can be used to create blurred versions of powerpoints.</p>
+  <p>1). <b>In powerpoint, select "save a copy" and change the file type from ".pptx" to ".jpg",</b> then hit save</p>
+  <p>     A pop-up will ask "Which slides do you want to export?" - select "All Slides"</p>
+  <p>     Powerpoint will then create a new folder containing jpg versions of all slides from the powerpoint</p>
+  <p>2). Click the "choose files" button and highlight all of the .jpgs exported by powerpoint, then click "open"</p>
+  <p>      <b>This tool will create blurred versions of all the slides selected,</b> sort them alphabetically, add them to a powerpoint, and start a download of that powerpoint.</p>
+  <p><b>It will take a moment to setup the web app, a "choose file" button will appear when everything is ready</b></p>
+  <hr>
+
+  <!-- We have two options of how to bring in pyodide. -->
+  <!-- The first option brings it in using a cdn. As long as this is working, there's no reason not to use it -->
+  <script src="https://cdn.jsdelivr.net/pyodide/v0.23.4/full/pyodide.js"></script>
+
+  <!-- The second option uses a locally-hosted version of pyodide. -->
+  <!-- <script src="pyodide/pyodide.js"></script> -->
+
+
+  <!-- The local version is good to have around in case something happens to the cdn version (which is outside our control) -->
+  <!-- But, the local version will burn through our bandwidth and will require us to do more setup with .whl files. -->
+  <!-- So, as long as the cdn version is working, we should stick to that option -->
+  <!-- If we change versions here, we also need to update the micropip.install() call to point at .whl files -->
+
+  <script src="index.js"></script>
+
+</main>
+
+</html>
+
+
+
+

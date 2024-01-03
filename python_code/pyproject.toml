@@ -1,0 +1,7 @@
+[project]
+dynamic = ["version"]
+name = "python_code"
+dependencies = [
+"python-pptx",
+"Pillow"
+]
